@@ -1,4 +1,9 @@
 package com.example.aplicasionfichajes.dtos;
 
-public record IncidenciaDto() {
-}
+import java.time.LocalDateTime;
+
+public record IncidenciaDto(
+        String tipo,
+        String descripcion,
+        LocalDateTime fechaHora
+) {}
