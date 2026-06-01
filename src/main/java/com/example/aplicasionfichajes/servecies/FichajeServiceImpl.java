@@ -28,6 +28,7 @@ public class FichajeServiceImpl implements FichajeService {
     // Umbral de horas extra: más de 10h en un día se considera incidencia
     private static final int UMBRAL_HORAS_EXTRA = 10;
 
+    //accede a tabla
     @Autowired
     private FichajeRepository fichajeRepository;
 

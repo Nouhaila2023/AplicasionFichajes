@@ -21,6 +21,7 @@ import java.util.Optional;
 @Service
 public class EmpresaServiceImpl implements EmpresaService {
 
+    //accede a tabla
     @Autowired
     private EmpresaRepository empresaRepository;
 
@@ -42,7 +43,7 @@ public class EmpresaServiceImpl implements EmpresaService {
         Empresa empresa = empresaMapper.toEntity(dto);
         return empresaMapper.toDto(empresaRepository.save(empresa));
     }
-
+    //Pide todas las empresas
     @Override
     @Transactional(readOnly = true)
     public List<EmpresaDto> findAll() {
@@ -50,6 +51,7 @@ public class EmpresaServiceImpl implements EmpresaService {
                 .map(empresaMapper::toDto)
                 .toList();
     }
+
 
     @Override
     @Transactional(readOnly = true)

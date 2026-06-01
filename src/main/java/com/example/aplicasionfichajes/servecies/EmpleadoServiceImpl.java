@@ -23,6 +23,7 @@ import java.util.Optional;
 @Service
 public class EmpleadoServiceImpl implements EmpleadoService {
 
+    //accede a tabla
     @Autowired
     private EmpleadoRepository empleadoRepository;
 
