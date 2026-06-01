@@ -8,7 +8,6 @@ public record FichajeCreateDto(
 
         Long empleadoId,
 
-        // Geolocalización opcional
         Double latitud,
         Double longitud
 ) {}

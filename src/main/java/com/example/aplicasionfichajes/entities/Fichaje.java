@@ -25,7 +25,6 @@ public class Fichaje {
     @Column(nullable = false)
     private TipoFichaje tipo;
 
-    // Geolocalización opcional
     private Double latitud;
     private Double longitud;
 
