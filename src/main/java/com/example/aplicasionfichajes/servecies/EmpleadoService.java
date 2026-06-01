@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface EmpleadoService {
+    //metodos
     EmpleadoDto create(EmpleadoCreateDto dto);
     List<EmpleadoDto> findAll();
     Optional<EmpleadoDto> findById(Long id);
