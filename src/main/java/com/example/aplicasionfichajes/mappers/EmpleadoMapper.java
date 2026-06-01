@@ -14,7 +14,6 @@ public interface EmpleadoMapper {
     @Mapping(source = "empresa.nombre", target = "empresaNombre")
     EmpleadoDto toDto(Empleado empleado);
 
-    // La relación con empresa se asigna en el servicio manualmente
     @Mapping(target = "empresa", ignore = true)
     @Mapping(target = "fichajes", ignore = true)
     @Mapping(target = "id", ignore = true)
